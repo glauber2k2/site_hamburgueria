@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+  --fundo: white;
+
+  --blacktext: #000;
+  --redtext: #b60303;
+
+  
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(70, 70, 70) 25%,
+    rgb(59, 59, 59)50%,
+    rgb(0, 0, 0) 100%
+  );
+
+font-family: 'Josefin Sans', sans-serif;
+  color: black;
+}
