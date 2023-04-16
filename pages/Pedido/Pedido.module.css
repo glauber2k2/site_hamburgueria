@@ -1,0 +1,18 @@
+.container {
+  display: block;
+  justify-content: center;
+  margin: auto;
+}
+.container p {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+  padding-inline: 30rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}

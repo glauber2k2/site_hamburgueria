@@ -13,6 +13,7 @@ export default function Navbar() {
               src="/images/burguer.png"
               width={1280}
               height={1280}
+              alt="logo da empresa"
               className={styles.logo}
             />
           </a>

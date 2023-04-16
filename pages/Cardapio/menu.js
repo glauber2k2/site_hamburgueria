@@ -1,4 +1,4 @@
-export const cardapio = {
+export const menu = {
   hamburgueres: [
     {
       nome: "Hambúrguer Clássico",
@@ -54,5 +54,14 @@ export const cardapio = {
         "Pão, hambúrguer vegano de feijão, alface, tomate e maionese vegana",
       preco: 16.9,
     },
+  ],
+  Acompanhamentos: [
+    { nome: "Fritas", preco: 5.9 },
+    { nome: "KitKat", preco: 8.9 },
+    { nome: "Bis", preco: 8.9 },
+    { nome: "Fritas c/ Cheddar", preco: 5.9 },
+    { nome: "Onion Rings", preco: 5.9 },
+    { nome: "Mini Coxinhas", preco: 14.9 },
+    { nome: "Suco", preco: 9.9 },
   ],
 };

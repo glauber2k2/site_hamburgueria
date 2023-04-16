@@ -1,6 +1,8 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "./Cardapio.module.css";
-import { cardapio } from "./menu";
+
+import { menu } from "./menu";
 
 export default function Cardapio() {
   return (
@@ -14,12 +16,13 @@ export default function Cardapio() {
         <h1 className={styles.title}>Cardápio - Hamburgueria Artesanal</h1>
 
         <div className={styles.tabs}>
-          <button className={styles.tab}>Hambúrgueres</button>
-          <button className={styles.tab}>Acompanhamentos</button>
+          <Link href="/Pedido">
+            <button className={styles.tab}>Fazer o pedido!</button>
+          </Link>
         </div>
 
         <ul className={styles.list}>
-          {cardapio.hamburgueres.map((item) => (
+          {menu.hamburgueres.map((item) => (
             <li key={item.nome} className={styles.item}>
               <h2>{item.nome}</h2>
               <p>{item.descricao}</p>
