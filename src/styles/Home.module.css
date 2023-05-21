@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  padding: 2rem;
+  height: 92vh;
+  gap: 5rem;
+  user-select: none;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+.description h1 {
+  font-size: 72px;
+  position: relative;
+  display: inline-block;
+}
+
+.description h4 {
+  letter-spacing: 2px;
+}
+
+.description h1 span {
+  background-color: #ffcb45;
+  padding: 0.5rem;
+}
+
+.demo {
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background: linear-gradient(#032e2ac5, #032e2a);
+  color: #ffcb45;
+  width: 50%;
+}
+
+.demo h1 {
+  display: flex;
+  font-size: 110px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
+}
+
+/* .burguer {
+  position: absolute;
+  object-fit: scale-down;
+  width: 30rem;
+  height: 30rem;
+  bottom: -5%;
+  right: 40%;
+  filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
+} */
+
+.refri {
+  position: absolute;
+  object-fit: scale-down;
+  width: 40rem;
+  height: 40rem;
+  bottom: -15%;
+  right: -2%;
+  filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
+}
+
+.snack {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.snack h1 {
+  margin-top: 1rem;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.snackPhoto {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  background-color: #ffcb45;
+  border-radius: 25px;
+  filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
+}
+.snack p {
+  margin-top: 1rem;
+  font-size: 22px;
+  width: 80%;
+}
+
+.snack button {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #032e2a;
+  color: #ffcb45;
+  padding: 1rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.snack button:hover {
+  background-color: #ffcb45;
+  color: #032e2a;
+}
+
+.snackPhoto img {
+  position: absolute;
+  object-fit: scale-down;
+  width: 30rem;
+  height: 30rem;
+}

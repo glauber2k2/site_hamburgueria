@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  height: 8vh;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoBox h1 {
+  font-size: 32px;
+}
+
+.logoBox img {
+  object-fit: scale-down;
+  width: 4rem;
+  height: 4rem;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  cursor: pointer;
+}
