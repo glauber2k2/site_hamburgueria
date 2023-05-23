@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  padding: 2rem;
+  padding: 2rem 4rem;
   height: 92vh;
   gap: 5rem;
   user-select: none;
@@ -20,13 +20,13 @@
   display: inline-block;
 }
 
-.description h4 {
-  letter-spacing: 2px;
-}
-
 .description h1 span {
   background-color: #ffcb45;
   padding: 0.5rem;
+}
+
+.description h4 {
+  letter-spacing: 2px;
 }
 
 .demo {
@@ -42,29 +42,19 @@
 
 .demo h1 {
   display: flex;
-  font-size: 110px;
+  font-size: 150px;
   letter-spacing: 5px;
   text-transform: uppercase;
   filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
 }
-
-/* .burguer {
-  position: absolute;
-  object-fit: scale-down;
-  width: 30rem;
-  height: 30rem;
-  bottom: -5%;
-  right: 40%;
-  filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
-} */
 
 .refri {
   position: absolute;
   object-fit: scale-down;
   width: 40rem;
   height: 40rem;
-  bottom: -15%;
-  right: -2%;
+  bottom: -12%;
+  right: -5%;
   filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
 }
 
@@ -96,15 +86,17 @@
 }
 
 .snack button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   position: absolute;
   bottom: 10%;
   right: 15%;
   border: none;
-  font-weight: bold;
   letter-spacing: 2px;
   background-color: #032e2a;
   color: #ffcb45;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 50px;
   text-transform: uppercase;
   cursor: pointer;
@@ -121,4 +113,181 @@
   object-fit: scale-down;
   width: 30rem;
   height: 30rem;
+}
+
+.menu {
+  display: flex;
+}
+
+.burguerMenu {
+  display: flex;
+  flex-direction: column;
+  background-color: #032e2a;
+  padding: 2rem;
+  color: #ffcb45;
+  width: 70%;
+  border-radius: 20px;
+}
+
+.burguerMenu h1 {
+  font-size: 120px;
+}
+
+.burguerMenu h1 span {
+  background-color: #ffcb45;
+  color: #032e2a;
+}
+
+.burguerMenu p {
+  font-size: 26px;
+  margin-top: 1rem;
+}
+
+.burguers {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5%;
+  border: 2px solid #ffcb45;
+  height: 55%;
+  border-radius: 25px;
+}
+
+.burguers h1 {
+  width: 60%;
+  font-size: 60px;
+  letter-spacing: 5px;
+  padding: 1rem;
+  text-align: right;
+}
+
+.burguers img {
+  position: absolute;
+  object-fit: scale-down;
+  width: 30rem;
+  height: 30rem;
+  filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
+  bottom: -20%;
+}
+
+.burguer1 {
+  left: 0%;
+  z-index: 0;
+}
+
+.burguer2 {
+  left: 8%;
+  z-index: 1;
+}
+
+.burguer3 {
+  z-index: 0;
+  left: 16%;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background: #ffee9080;
+  border-radius: 25px;
+  opacity: 0.8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 2%;
+}
+
+.menuList ul {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  gap: 0.5rem;
+}
+
+.menuList li {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.menuList li span {
+  text-align: end;
+  background-color: #032e2a;
+  color: #ffcb45;
+  padding: 2px 4px;
+  width: 30%;
+  height: 21px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .demo {
+    display: none;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .description h1 {
+    font-size: 36px;
+  }
+  .description h1 span {
+    padding: 0.1rem;
+  }
+
+  .description h4 {
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+  .snack {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .snack h1 {
+    font-size: 30px;
+  }
+
+  .snack p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .snack button {
+    position: absolute;
+    bottom: -15%;
+    left: 0%;
+    right: 45%;
+    letter-spacing: 1px;
+    padding: 0.2rem 0.8rem;
+  }
+
+  .snackPhoto {
+    width: 40%;
+    height: 25vh;
+  }
+
+  .snackPhoto img {
+    bottom: -80%;
+    width: 15rem;
+  }
 }

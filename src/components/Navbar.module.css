@@ -35,3 +35,9 @@
   font-size: 22px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .links a {
+    display: none;
+  }
+}
