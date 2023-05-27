@@ -15,7 +15,7 @@
 }
 
 .description h1 {
-  font-size: 72px;
+  font-size: 4vw;
   position: relative;
   display: inline-block;
 }
@@ -42,8 +42,8 @@
 
 .demo h1 {
   display: flex;
-  font-size: 150px;
-  letter-spacing: 5px;
+  font-size: 6vw;
+  letter-spacing: 1vw;
   text-transform: uppercase;
   filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
 }
@@ -51,8 +51,8 @@
 .refri {
   position: absolute;
   object-fit: scale-down;
-  width: 40rem;
-  height: 40rem;
+  width: 40vw;
+  height: 40vw;
   bottom: -12%;
   right: -5%;
   filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
@@ -62,26 +62,26 @@
   position: relative;
   display: flex;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .snack h1 {
   margin-top: 1rem;
-  font-size: 35px;
+  font-size: 2vw;
   text-transform: uppercase;
 }
 
 .snackPhoto {
   position: relative;
-  width: 25rem;
-  height: 25rem;
+  width: 15rem;
+  height: 15vw;
   background-color: #ffcb45;
   border-radius: 25px;
   filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
 }
 .snack p {
   margin-top: 1rem;
-  font-size: 22px;
+  font-size: 1vw;
   width: 80%;
 }
 
@@ -91,12 +91,12 @@
   gap: 1rem;
   position: absolute;
   bottom: 10%;
-  right: 15%;
+  right: 10%;
   border: none;
   letter-spacing: 2px;
   background-color: #032e2a;
   color: #ffcb45;
-  padding: 0.5rem 1rem;
+  padding: 0.5vw 1vw;
   border-radius: 50px;
   text-transform: uppercase;
   cursor: pointer;
@@ -111,8 +111,10 @@
 .snackPhoto img {
   position: absolute;
   object-fit: scale-down;
-  width: 30rem;
-  height: 30rem;
+  width: 15vw;
+  height: 15vw;
+  top: 20%;
+  left: 25%;
 }
 
 .menu {
@@ -139,7 +141,7 @@
 }
 
 .burguerMenu p {
-  font-size: 26px;
+  font-size: 2vw;
   margin-top: 1rem;
 }
 
@@ -156,7 +158,7 @@
 
 .burguers h1 {
   width: 60%;
-  font-size: 60px;
+  font-size: 3vw;
   letter-spacing: 5px;
   padding: 1rem;
   text-align: right;
@@ -165,8 +167,8 @@
 .burguers img {
   position: absolute;
   object-fit: scale-down;
-  width: 30rem;
-  height: 30rem;
+  width: 25vw;
+  height: 25vw;
   filter: drop-shadow(5px 0px 10px rgba(0, 0, 0, 2));
   bottom: -20%;
 }
@@ -190,8 +192,8 @@
   display: flex;
   width: 100%;
   height: 100vh;
-  padding: 2rem;
-  gap: 2rem;
+  padding: 2%;
+  gap: 2%;
 }
 
 .menuList {
@@ -203,12 +205,13 @@
   opacity: 0.8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 2%;
+  font-size: 1vw;
 }
 
 .menuList ul {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0;
+  margin: 5% 0;
   gap: 0.5rem;
 }
 
@@ -226,7 +229,7 @@
   color: #ffcb45;
   padding: 2px 4px;
   width: 30%;
-  height: 21px;
+  height: 1vw;
 }
 
 @media (max-width: 768px) {
@@ -235,7 +238,37 @@
   }
 
   .menu {
-    display: none;
+    flex-direction: column;
+  }
+
+  .menu h1 {
+    font-size: 3vw;
+  }
+
+  .burguerMenu {
+    width: 100%;
+  }
+
+  .burguerMenu h1 {
+    font-size: 3vw;
+  }
+
+  .burguerMenu p {
+    font-size: 3vw;
+  }
+
+  .menuList {
+    width: 100%;
+    font-size: 4vw;
+  }
+
+  .menuList li span {
+    text-align: end;
+    background-color: #032e2a;
+    color: #ffcb45;
+    padding: 2px 4px;
+    width: 30%;
+    height: 4vw;
   }
 
   .demo {
@@ -276,9 +309,11 @@
     position: absolute;
     bottom: -15%;
     left: 0%;
-    right: 45%;
+    left: 45%;
     letter-spacing: 1px;
-    padding: 0.2rem 0.8rem;
+    padding: 0.2vw 0.8vw;
+    font-size: 3vw;
+    width: 42vw;
   }
 
   .snackPhoto {
@@ -287,6 +322,8 @@
   }
 
   .snackPhoto img {
+    width: 40vw;
+    height: 40vw;
     bottom: -80%;
     width: 15rem;
   }
